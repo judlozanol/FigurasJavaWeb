@@ -3,13 +3,31 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Figuras</title>
+    <link rel="stylesheet" href="estilos\estilos1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="ServletPuntos">
+            <h1>Calculadora de área y perímetro</h1>
+            <h2>Selecciona una figura</h2>
+            
+            <div class="form-group">
+                <label for="figuras">Figuras:</label>
+                <select id="figuras" name="figuras">
+                    <option value="cuadrado">Cuadrado</option>
+                    <option value="circulo">Círculo</option>
+                    <option value="triangulo">Triángulo</option>
+                    <option value="rectangulo">Rectángulo</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
 </html>
+
